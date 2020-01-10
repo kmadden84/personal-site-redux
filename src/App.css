@@ -1,0 +1,159 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+html {
+  overflow-y: scroll;
+}
+body {
+  /*background: rgb(63,237,251);
+  //background: radial-gradient(circle, rgba(63,237,251,1) 0%, rgba(192,70,252,1) 100%);
+  background: linear-gradient(0deg, rgba(59,92,157,1) 0%, rgba(36,72,143,0.9416141456582633) 28%, rgba(31,68,140,0.9416141456582633) 54%, rgba(21,60,107,0.5494572829131652) 100%);
+*/
+background: url('/img/toronto-sm.jpg');
+background-size: cover;
+background-attachment: fixed;
+background-position-y: 92%;
+
+}
+.accordion .card {
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(0,0,0,.125) !important;
+}
+
+.accordion .card:last-child {
+  margin-bottom: 0;
+}
+
+.card-header .btn {
+  text-align: left;
+  width: 100%;
+    height: 100%;
+}
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 0 !important;
+}
+.row {
+  margin-bottom: 20px;
+
+}
+.accordion .row {
+  margin-bottom: 0;
+}
+
+.header {
+  padding-bottom: 80px;
+}
+
+.fixed-bottom > p {
+  margin: 0;
+}
+.footer .navbar {
+  padding: 0rem 0.5rem !Important;
+}
+.fixed-bottom {
+  display: flex;
+  align-items: center;
+}
+.fa-github,
+.fa-linkedin{
+  font-size: 12px;
+}
+.footer--social {
+  margin-left: auto;
+}
+
+.carousel-item img {
+  max-height: 555px !important;
+}
+
+.carousel-item:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: blue;
+  opacity: 0.6 !important;
+  height: 100%;
+}
+.bannerLink {
+  color: #fff;
+  font-size: 20px;
+}
+.bannerLink:hover {
+  color: #fff;
+  font-weight: bold;
+}
+.portFolio-modal .modal-body {
+  height: 100vh;
+}
+.portFolio-modal iframe {
+  height: 100%;
+  width: 100%;
+}
+.portFolio-modal {
+  width: 80vw !important;
+  display: block;
+  left: 0 !important;
+  right: 0 !important;
+  top: 0 !important;
+  height: 95vh !important;
+  margin: 0 auto !important;
+  overflow-y: hidden !important;
+
+}
+
+@media (max-width: 767px) {
+  .carousel-caption p {
+      font-size: 14px;
+  }
+  .carousel-caption {
+    bottom: 15% !important;
+}
+
+.carousel {
+  position: relative;
+  height: 47vh;
+}
+.carousel-item img {
+  max-height: 100% !important;
+  height: 100% !important;
+}
+.carousel-item, .carousel-inner {
+  height: 100%;
+}
+}
+
+
+
+@media (min-width: 576px) {
+.jumbotron {
+    padding: 2rem 2rem !important;
+}
+.modal-dialog {
+  max-width: 100% !important;
+  margin: 1.75rem auto;
+}
+}

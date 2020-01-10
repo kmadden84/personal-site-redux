@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.navbar, .carousel {
+  flex: 1 1;
+}
+/* .row > div {
+  flex: 1 1;
+} */
+
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+.svg-inline--fa {
+  width: 4em !important;
+  height: 4em;
+  padding: 10px 10px;
+}
+
+.cardList {
+padding: 20px 0px 40px;
+}
+.accordion .card-title.h5 {
+  color: #212529;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+.accordion .card-title.h5:hover {
+text-decoration: none;
+}
+.carousel-caption {
+  bottom: 32% !important;
+}
+.modal:not(.portFolio-modal) .modal-body, .modal:not(.portFolio-modal) .modal-body img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+/* 
+ .modal {
+  width: 630px !important;
+  top: 5vh;
+  left: 32vw; 
+}  */
+
+.link {
+    color: #007bff !important;
+    text-decoration: none !important;
+    background-color: transparent !important;
+}
+
+.link:hover {
+  color: #0056b3 !important;
+  text-decoration: underline !important;
+  cursor: pointer !important;
+}
+@media (min-width: 1500px) {
+  .modal {
+    width: 33vw !important;
+    top: 11vh !important;
+    left: 33vw!important;
+}
+}
+@media (max-width:1499px)  and (min-width: 767px) {
+  .modal {
+    width: 60vw !important;
+    left: 20vw !important;
+}
+}
+
+@media (max-width: 767px) {
+  .modal {
+ padding-right: 0 !important;
+}
+.modal.email-confirmation {
+  padding-right: 0!important;
+  width: 75vw;
+  display: block !important;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+}
+@media (max-width: 480px) {
+.carousel-caption {
+    bottom: 5% !important;
+}
+}
+@media(max-width: 991px) {
+  .cardList .row {
+    margin-bottom: 0;
+  }
+  .cardList div[class*="col"] {
+    margin-bottom: 20px;
+  }
+}
